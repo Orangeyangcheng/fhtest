@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f48dea0d-508b-4531-8848-2a1b4de0a111" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fht/fht_TestCase/SaveCustomer_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fht/fht_TestCase/SaveCustomer_Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -19,10 +19,13 @@
       <file leaf-file-name="SaveCustomer_Test.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/fht/fht_TestCase/SaveCustomer_Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="624">
-              <caret line="252" column="67" selection-start-line="252" selection-start-column="50" selection-end-line="252" selection-end-column="67" />
+            <state relative-caret-position="-440">
+              <caret line="161" column="83" lean-forward="true" selection-start-line="161" selection-start-column="83" selection-end-line="161" selection-end-column="83" />
               <folding>
                 <element signature="method#buildHouseKepperLoginRequest#0;class#SaveCustomer_Test#0" />
+                <element signature="method#SaveCustomer_手机号为空#0;class#SaveCustomer_Test#0" />
+                <element signature="method#SaveCustomer_最小租金为负数#0;class#SaveCustomer_Test#0" />
+                <element signature="method#loginBeforeSaveCustomer#0;class#SaveCustomer_Test#0" />
               </folding>
             </state>
           </provider>
@@ -136,7 +139,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="fht_keyuan" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
   </component>
@@ -606,8 +609,8 @@
         <item itemvalue="TestNG.SaveCustomer_Test.loginBeforeSaveCustomer" />
         <item itemvalue="TestNG.houseKeeperLogin_Test.houseKepperLogin_冒烟测试" />
         <item itemvalue="TestNG.houseKeeperLogin_Test.HouseKepperLogin_冒烟测试" />
-        <item itemvalue="TestNG.SaveCustomer_Test.SaveCustomer_冒烟测试" />
         <item itemvalue="TestNG.SaveCustomer_Test.SaveCustomer_最小租金为负数" />
+        <item itemvalue="TestNG.SaveCustomer_Test.SaveCustomer_冒烟测试" />
       </list>
     </recent_temporary>
   </component>
@@ -664,7 +667,14 @@
       <option name="project" value="LOCAL" />
       <updated>1533717242375</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="修改提交">
+      <created>1533723003509</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1533723003510</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1051,10 +1061,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/fht/fht_TestCase/SaveCustomer_Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="252" column="67" selection-start-line="252" selection-start-column="50" selection-end-line="252" selection-end-column="67" />
+        <state relative-caret-position="-440">
+          <caret line="161" column="83" lean-forward="true" selection-start-line="161" selection-start-column="83" selection-end-line="161" selection-end-column="83" />
           <folding>
             <element signature="method#buildHouseKepperLoginRequest#0;class#SaveCustomer_Test#0" />
+            <element signature="method#SaveCustomer_手机号为空#0;class#SaveCustomer_Test#0" />
+            <element signature="method#SaveCustomer_最小租金为负数#0;class#SaveCustomer_Test#0" />
+            <element signature="method#loginBeforeSaveCustomer#0;class#SaveCustomer_Test#0" />
           </folding>
         </state>
       </provider>
