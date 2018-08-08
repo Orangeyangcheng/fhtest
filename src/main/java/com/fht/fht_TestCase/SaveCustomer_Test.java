@@ -263,5 +263,47 @@ public class SaveCustomer_Test {
 
     }
 
+    @Test
+    public void loginBeforeSave(){
+        HttpUtil httpUtil = new HttpUtil();
+        String mobile = "18012345678";
+        String password = "20eabe5d64b0e216796e834f52d61fd0b70332fc";
+        JSONObject param = buildHouseKepperLoginRequest(mobile,password);
+        JSONObject loginResult = HttpUtil.doPost(loginUrl,param);
+        System.out.println(com.alibaba.fastjson.JSONObject.toJSONString(loginResult,true));
+
+        JSONObject response = JSONObject.fromObject(loginResult);
+        JSONObject data = response.getJSONObject("data");
+        String sessionId = data.getString("sessionId");
+
+        String name = getName.getRandomName();
+        String remark = "脚本测试";
+        String mobileNo = getMobileNo.getTelephone();
+        int fee = 1000;
+        String rentMin = "1000";
+        String rentMax = "1500";
+        JSONObject params = buidSaveCustomerRequest(name,remark,mobileNo,fee,rentMin,rentMax,sessionId);
+        JSONObject result = httpUtil.doPost(url,params);
+        System.out.println("客源姓名："+name);
+        System.out.println(com.alibaba.fastjson.JSONObject.toJSONString(result,true));
+
+        ConnectDataBaseRequest connectDataBaseRequest = new ConnectDataBaseRequest();
+        connectDataBaseRequest.setName("name");
+        connectDataBaseRequest.setRent_fee("rent_fee");
+        connectDataBaseRequest.setMobile("mobile");
+        connectDataBaseRequest.setSql(
+                "select name,rent_fee,mobile from fht_flying_online.ft_customer_source order by gmt_create desc limit 1");
+        QueryDataBaseResult Result = ConnectDataBase.connectDB(connectDataBaseRequest,2);
+        System.out.println("mobile:"+Result.getMobile());
+        System.out.println("rent_fee:"+Result.getRent_fee());
+        System.out.println("name："+Result.getName());
+
+        Assert.assertTrue(Result.getMobile().equals(mobileNo),"电话号码不一致");
+        Assert.assertTrue(Result.getRent_fee() == fee,"月租金金额不一致");
+        Assert.assertTrue(Result.getName().equals(name),"姓名不一致");
+
+
+    }
+
 
 }
