@@ -222,7 +222,7 @@ public class SaveCustomer_Test {
     }
 
     @Test
-    public void loginBeforeSaveCustomer(){
+    public void SaveCustomer_在城市管家APP保存客源(){
         HttpUtil httpUtil = new HttpUtil();
         String mobile = "18012345678";
         String password = "20eabe5d64b0e216796e834f52d61fd0b70332fc";
