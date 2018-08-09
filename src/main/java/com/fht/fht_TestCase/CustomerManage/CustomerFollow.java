@@ -47,6 +47,23 @@ public class CustomerFollow {
         JSONObject params = buildCustomerFollowRequest(queryDataBaseResult.getCustomerId(),followType,sessionId);
         JSONObject followResult = HttpUtil.doPost(followUrl,params);
         System.out.println(com.alibaba.fastjson.JSONObject.toJSONString(followResult,true));
+
+    }
+
+    @Test
+    public void CustomerFollow_为已经签约的客源添加跟进记录(){
+        ConnectDataBaseRequest connectDataBaseRequest = new ConnectDataBaseRequest();
+        connectDataBaseRequest.setCustomerId("id");
+        // 查询已经是签约状态的客源
+        connectDataBaseRequest.setSql(
+                "select id from fht_flying_online.ft_customer_source where status = 2 order by gmt_create desc limit 1");
+        QueryDataBaseResult queryDataBaseResult = ConnectDataBase.connectDB(connectDataBaseRequest,3);
+        System.out.println("id:"+queryDataBaseResult.getCustomerId());
+
+        int followType = 4; // 跟进类型
+        JSONObject params = buildCustomerFollowRequest(queryDataBaseResult.getCustomerId(),followType,sessionId);
+        JSONObject followResult = HttpUtil.doPost(followUrl,params);
+        System.out.println(com.alibaba.fastjson.JSONObject.toJSONString(followResult,true));
     }
 
 
