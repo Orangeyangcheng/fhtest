@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f48dea0d-508b-4531-8848-2a1b4de0a111" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fht/fht_TestCase/CustomerManage/CustomerFollow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fht/HttpClient/DataBase/JudgeParam.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fht/fht_TestCase/SaveCustomer_Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fht/fht_TestCase/SaveCustomer_Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fht/HttpClient/DataBase/ConnectDataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fht/HttpClient/DataBase/ConnectDataBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fht/HttpClient/DataBase/ConnectDataBaseRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fht/HttpClient/DataBase/ConnectDataBaseRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fht/HttpClient/DataBase/QueryDataBaseResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fht/HttpClient/DataBase/QueryDataBaseResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fht/fht_TestCase/CustomerManage/CustomerFollow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fht/fht_TestCase/CustomerManage/CustomerFollow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fht/fht_TestCase/SaveCustomer_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fht/fht_TestCase/SaveCustomer_Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fht/HttpClient/DataBase/ConnectDataBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fht/HttpClient/DataBase/ConnectDataBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fht/HttpClient/DataBase/ConnectDataBaseRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fht/HttpClient/DataBase/ConnectDataBaseRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fht/HttpClient/DataBase/QueryDataBaseResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fht/HttpClient/DataBase/QueryDataBaseResult.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,23 +28,23 @@
       <file leaf-file-name="SaveCustomer_Test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/fht/fht_TestCase/SaveCustomer_Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2553">
-              <caret line="19" column="84" lean-forward="true" selection-start-line="19" selection-start-column="84" selection-end-line="19" selection-end-column="84" />
+            <state relative-caret-position="1418">
+              <caret line="281" column="19" selection-start-line="281" selection-start-column="18" selection-end-line="281" selection-end-column="19" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="method#buildHouseKepperLoginRequest#0;class#SaveCustomer_Test#0" />
                 <element signature="method#SaveCustomer_手机号为空#0;class#SaveCustomer_Test#0" />
                 <element signature="method#SaveCustomer_最小租金为负数#0;class#SaveCustomer_Test#0" />
-                <element signature="method#loginBeforeSaveCustomer#0;class#SaveCustomer_Test#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomerFollow.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CustomerFollow.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/fht/fht_TestCase/CustomerManage/CustomerFollow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+            <state relative-caret-position="658">
+              <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -45,14 +52,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="houseKeeperLogin_Test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/fht/fht_TestCase/houseKeeperLogin_Test.java">
+      <file leaf-file-name="ConnectDataBaseRequest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/fht/HttpClient/DataBase/ConnectDataBaseRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="79" />
+            <state relative-caret-position="1957">
+              <caret line="103" column="17" selection-start-line="103" selection-start-column="17" selection-end-line="103" selection-end-column="17" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#buildHouseKepperLoginRequest#0;class#houseKeeperLogin_Test#0" />
+                <element signature="e#608#609#0" expanded="true" />
+                <element signature="e#638#639#0" expanded="true" />
+                <element signature="e#666#667#0" expanded="true" />
+                <element signature="e#692#693#0" expanded="true" />
+                <element signature="e#742#743#0" expanded="true" />
+                <element signature="e#784#785#0" expanded="true" />
+                <element signature="e#820#821#0" expanded="true" />
+                <element signature="e#852#853#0" expanded="true" />
+                <element signature="e#902#903#0" expanded="true" />
+                <element signature="e#944#945#0" expanded="true" />
+                <element signature="e#979#980#0" expanded="true" />
+                <element signature="e#1010#1011#0" expanded="true" />
+                <element signature="e#1063#1064#0" expanded="true" />
+                <element signature="e#1108#1109#0" expanded="true" />
+                <element signature="e#1143#1144#0" expanded="true" />
+                <element signature="e#1174#1175#0" expanded="true" />
+                <element signature="e#1214#1215#0" expanded="true" />
+                <element signature="e#1245#1246#0" expanded="true" />
+                <element signature="e#1276#1277#0" expanded="true" />
+                <element signature="e#1303#1304#0" expanded="true" />
+                <element signature="e#1351#1352#0" expanded="true" />
+                <element signature="e#1391#1392#0" expanded="true" />
+                <element signature="e#1426#1427#0" expanded="true" />
+                <element signature="e#1457#1458#0" expanded="true" />
+                <element signature="e#1501#1502#0" expanded="true" />
+                <element signature="e#1537#1538#0" expanded="true" />
+                <element signature="e#1570#1571#0" expanded="true" />
+                <element signature="e#1599#1600#0" expanded="true" />
+                <element signature="e#1691#1692#0" expanded="true" />
+                <element signature="e#1710#1711#0" expanded="true" />
+                <element signature="e#1772#1773#0" expanded="true" />
+                <element signature="e#1804#1805#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -61,8 +98,8 @@
       <file leaf-file-name="ConnectDataBase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/fht/HttpClient/DataBase/ConnectDataBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="27" column="32" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="32" />
+            <state relative-caret-position="532">
+              <caret line="37" column="94" lean-forward="true" selection-start-line="37" selection-start-column="94" selection-end-line="37" selection-end-column="94" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -70,14 +107,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getMobileNo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/fht/Parameter/getMobileNo.java">
+      <file leaf-file-name="JudgeParam.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/fht/HttpClient/DataBase/JudgeParam.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+            <state relative-caret-position="133">
+              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
               <folding>
-                <element signature="e#104#105#0" expanded="true" />
-                <element signature="e#167#168#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QueryDataBaseResult.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/fht/HttpClient/DataBase/QueryDataBaseResult.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="781">
+              <caret line="89" column="45" selection-start-line="89" selection-start-column="45" selection-end-line="89" selection-end-column="45" />
+              <folding>
+                <element signature="e#1162#1163#0" expanded="true" />
+                <element signature="e#1194#1195#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -197,12 +246,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/fht/HttpClient/ConnectDataBase/ConnectDataBaseRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fht/HttpClient/ConnectDataBase/ConnectDataBase.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fht/HttpClient/ConnectDataBase.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/fht/HttpClient/DataBase/ConnectDataBase.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fht/fht_TestCase/findByOrderNo_Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fht/fht_TestCase/houseKeeper_OCR.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fht/fht_TestCase/houseKeeperLogin_Test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/fht/fht_TestCase/SaveCustomer_Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fht/HttpClient/DataBase/QueryDataBaseResult.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fht/HttpClient/DataBase/ConnectDataBaseRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fht/fht_TestCase/CustomerManage/CustomerFollow.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fht/fht_TestCase/SaveCustomer_Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fht/HttpClient/DataBase/ConnectDataBase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fht/HttpClient/DataBase/JudgeParam.java" />
       </list>
     </option>
   </component>
@@ -237,10 +289,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1288" />
-    <option name="y" value="131" />
-    <option name="width" value="960" />
-    <option name="height" value="496" />
+    <option name="x" value="-1928" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -323,6 +375,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="fht" type="462c0819:PsiDirectoryNode" />
+              <item name="HttpClient" type="462c0819:PsiDirectoryNode" />
+              <item name="DataBase" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fhtest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fhtest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="fht" type="462c0819:PsiDirectoryNode" />
               <item name="Parameter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -367,7 +429,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.CustomerFollow.CustomerFollow_客源跟进冒烟测试">
+  <component name="RunManager" selected="TestNG.ConnectMysql_Test.ConnectMysql">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -397,6 +459,35 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="WORKING_DIRECTORY" />
     </configuration>
+    <configuration name="ConnectMysql_Test.ConnectMysql" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="fhtest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fht.HttpClient.DataBase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="com.fht.HttpClient.DataBase" />
+      <option name="MAIN_CLASS_NAME" value="com.fht.HttpClient.DataBase.ConnectMysql_Test" />
+      <option name="METHOD_NAME" value="ConnectMysql" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
     <configuration name="CustomerFollow.CustomerFollow_客源跟进冒烟测试" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="fhtest" />
       <extension name="coverage">
@@ -411,6 +502,35 @@
       <option name="PACKAGE_NAME" value="com.fht.fht_TestCase.CustomerManage" />
       <option name="MAIN_CLASS_NAME" value="com.fht.fht_TestCase.CustomerManage.CustomerFollow" />
       <option name="METHOD_NAME" value="CustomerFollow_客源跟进冒烟测试" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="CustomerFollow.CustomerFollow_为客源添加跟进记录" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="fhtest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fht.fht_TestCase.CustomerManage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="com.fht.fht_TestCase.CustomerManage" />
+      <option name="MAIN_CLASS_NAME" value="com.fht.fht_TestCase.CustomerManage.CustomerFollow" />
+      <option name="METHOD_NAME" value="CustomerFollow_为客源添加跟进记录" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -593,78 +713,20 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="houseKeeperLogin_Test.HouseKepperLogin_冒烟测试" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="fhtest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.fht.fht_TestCase.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="com.fht.fht_TestCase" />
-      <option name="MAIN_CLASS_NAME" value="com.fht.fht_TestCase.houseKeeperLogin_Test" />
-      <option name="METHOD_NAME" value="HouseKepperLogin_冒烟测试" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="houseKeeperLogin_Test.houseKepperLogin_冒烟测试" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="fhtest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.fht.fht_TestCase.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="com.fht.fht_TestCase" />
-      <option name="MAIN_CLASS_NAME" value="com.fht.fht_TestCase.houseKeeperLogin_Test" />
-      <option name="METHOD_NAME" value="houseKepperLogin_冒烟测试" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
-    </configuration>
     <list>
-      <item itemvalue="TestNG.houseKeeperLogin_Test.HouseKepperLogin_冒烟测试" />
-      <item itemvalue="TestNG.houseKeeperLogin_Test.houseKepperLogin_冒烟测试" />
       <item itemvalue="TestNG.SaveCustomer_Test.loginBeforeSaveCustomer" />
       <item itemvalue="TestNG.SaveCustomer_Test.loginBeforeSave" />
       <item itemvalue="TestNG.CustomerFollow.CustomerFollow_客源跟进冒烟测试" />
+      <item itemvalue="TestNG.CustomerFollow.CustomerFollow_为客源添加跟进记录" />
+      <item itemvalue="TestNG.ConnectMysql_Test.ConnectMysql" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.CustomerFollow.CustomerFollow_客源跟进冒烟测试" />
+        <item itemvalue="TestNG.ConnectMysql_Test.ConnectMysql" />
         <item itemvalue="TestNG.SaveCustomer_Test.loginBeforeSave" />
+        <item itemvalue="TestNG.CustomerFollow.CustomerFollow_为客源添加跟进记录" />
+        <item itemvalue="TestNG.CustomerFollow.CustomerFollow_客源跟进冒烟测试" />
         <item itemvalue="TestNG.SaveCustomer_Test.loginBeforeSaveCustomer" />
-        <item itemvalue="TestNG.houseKeeperLogin_Test.houseKepperLogin_冒烟测试" />
-        <item itemvalue="TestNG.houseKeeperLogin_Test.HouseKepperLogin_冒烟测试" />
       </list>
     </recent_temporary>
   </component>
@@ -742,22 +804,17 @@
       <option name="project" value="LOCAL" />
       <updated>1533723820297</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="修改提交">
+      <created>1533779744152</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1533779744152</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SaveCustomer_Test_loginBeforeSaveCustomer - 2018.08.08 at 16h 21m 47s.xml">
-      <configuration name="SaveCustomer_Test.loginBeforeSaveCustomer" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="houseKeeperLogin_Test_houseKepperLogin_冒烟测试 - 2018.08.08 at 16h 22m 03s.xml">
-      <configuration name="houseKeeperLogin_Test.houseKepperLogin_冒烟测试" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="SaveCustomer_Test_loginBeforeSaveCustomer - 2018.08.08 at 16h 23m 16s.xml">
-      <configuration name="SaveCustomer_Test.loginBeforeSaveCustomer" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="SaveCustomer_Test_loginBeforeSaveCustomer - 2018.08.08 at 16h 26m 28s.xml">
-      <configuration name="SaveCustomer_Test.loginBeforeSaveCustomer" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="SaveCustomer_Test_loginBeforeSaveCustomer - 2018.08.08 at 16h 27m 42s.xml">
       <configuration name="SaveCustomer_Test.loginBeforeSaveCustomer" configurationId="TestNG" />
     </history-entry>
@@ -776,6 +833,18 @@
     <history-entry file="CustomerFollow_CustomerFollow_客源跟进冒烟测试 - 2018.08.09 at 09h 51m 12s.xml">
       <configuration name="CustomerFollow.CustomerFollow_客源跟进冒烟测试" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="CustomerFollow_CustomerFollow_为客源添加跟进记录 - 2018.08.09 at 10h 16m 26s.xml">
+      <configuration name="CustomerFollow.CustomerFollow_为客源添加跟进记录" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="CustomerFollow_CustomerFollow_为客源添加跟进记录 - 2018.08.09 at 10h 18m 10s.xml">
+      <configuration name="CustomerFollow.CustomerFollow_为客源添加跟进记录" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SaveCustomer_Test_loginBeforeSave - 2018.08.09 at 10h 46m 06s.xml">
+      <configuration name="SaveCustomer_Test.loginBeforeSave" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SaveCustomer_Test_loginBeforeSave - 2018.08.09 at 10h 47m 43s.xml">
+      <configuration name="SaveCustomer_Test.loginBeforeSave" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
@@ -783,7 +852,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32616487" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32606325" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -821,17 +890,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="26" />
+      <option name="time" value="27" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/apache-maven-3.0.5-bin/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar!/org/apache/commons/logging/Log.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/apache-maven-3.0.5-bin/repository/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6-sources.jar!/org/apache/http/client/methods/CloseableHttpResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -858,6 +920,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1008,20 +1073,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fht/HttpClient/DataBase/QueryDataBaseResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fht/HttpClient/DataBase/ConnectDataBaseRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/fht/HttpClient/DataBase/ConnectMysql_Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -1043,16 +1094,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#buildHouseKepperLoginRequest#0;class#houseKeeperLogin_Test#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fht/HttpClient/DataBase/ConnectDataBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="27" column="32" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1108,23 +1149,95 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fht/HttpClient/DataBase/QueryDataBaseResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="781">
+          <caret line="89" column="45" selection-start-line="89" selection-start-column="45" selection-end-line="89" selection-end-column="45" />
+          <folding>
+            <element signature="e#1162#1163#0" expanded="true" />
+            <element signature="e#1194#1195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/fht/fht_TestCase/SaveCustomer_Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2553">
-          <caret line="19" column="84" lean-forward="true" selection-start-line="19" selection-start-column="84" selection-end-line="19" selection-end-column="84" />
+        <state relative-caret-position="1418">
+          <caret line="281" column="19" selection-start-line="281" selection-start-column="18" selection-end-line="281" selection-end-column="19" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#buildHouseKepperLoginRequest#0;class#SaveCustomer_Test#0" />
             <element signature="method#SaveCustomer_手机号为空#0;class#SaveCustomer_Test#0" />
             <element signature="method#SaveCustomer_最小租金为负数#0;class#SaveCustomer_Test#0" />
-            <element signature="method#loginBeforeSaveCustomer#0;class#SaveCustomer_Test#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/fht/fht_TestCase/CustomerManage/CustomerFollow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        <state relative-caret-position="658">
+          <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fht/HttpClient/DataBase/ConnectDataBaseRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1957">
+          <caret line="103" column="17" selection-start-line="103" selection-start-column="17" selection-end-line="103" selection-end-column="17" />
+          <folding>
+            <element signature="e#608#609#0" expanded="true" />
+            <element signature="e#638#639#0" expanded="true" />
+            <element signature="e#666#667#0" expanded="true" />
+            <element signature="e#692#693#0" expanded="true" />
+            <element signature="e#742#743#0" expanded="true" />
+            <element signature="e#784#785#0" expanded="true" />
+            <element signature="e#820#821#0" expanded="true" />
+            <element signature="e#852#853#0" expanded="true" />
+            <element signature="e#902#903#0" expanded="true" />
+            <element signature="e#944#945#0" expanded="true" />
+            <element signature="e#979#980#0" expanded="true" />
+            <element signature="e#1010#1011#0" expanded="true" />
+            <element signature="e#1063#1064#0" expanded="true" />
+            <element signature="e#1108#1109#0" expanded="true" />
+            <element signature="e#1143#1144#0" expanded="true" />
+            <element signature="e#1174#1175#0" expanded="true" />
+            <element signature="e#1214#1215#0" expanded="true" />
+            <element signature="e#1245#1246#0" expanded="true" />
+            <element signature="e#1276#1277#0" expanded="true" />
+            <element signature="e#1303#1304#0" expanded="true" />
+            <element signature="e#1351#1352#0" expanded="true" />
+            <element signature="e#1391#1392#0" expanded="true" />
+            <element signature="e#1426#1427#0" expanded="true" />
+            <element signature="e#1457#1458#0" expanded="true" />
+            <element signature="e#1501#1502#0" expanded="true" />
+            <element signature="e#1537#1538#0" expanded="true" />
+            <element signature="e#1570#1571#0" expanded="true" />
+            <element signature="e#1599#1600#0" expanded="true" />
+            <element signature="e#1691#1692#0" expanded="true" />
+            <element signature="e#1710#1711#0" expanded="true" />
+            <element signature="e#1772#1773#0" expanded="true" />
+            <element signature="e#1804#1805#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fht/HttpClient/DataBase/ConnectDataBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="37" column="94" lean-forward="true" selection-start-line="37" selection-start-column="94" selection-end-line="37" selection-end-column="94" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fht/HttpClient/DataBase/JudgeParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

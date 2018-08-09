@@ -279,7 +279,7 @@ public class SaveCustomer_Test {
         String name = getName.getRandomName();
         String remark = "脚本测试";
         String mobileNo = getMobileNo.getTelephone();
-        int fee = 1000;
+        int fee = 1;
         String rentMin = "1000";
         String rentMax = "1500";
         JSONObject params = buidSaveCustomerRequest(name,remark,mobileNo,fee,rentMin,rentMax,sessionId);

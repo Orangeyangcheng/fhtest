@@ -34,23 +34,9 @@ public class ConnectDataBase {
             ResultSet resultSet = stmt.executeQuery(connectDataBaseRequest.getSql());	//执行sql
 
             // 展开结果集数据库
-            if (param == 1){
-                while(resultSet.next()){
-                    // 通过字段检索
-                    queryDataBaseResult.setColumn_id(resultSet.getInt(connectDataBaseRequest.getColumn_id()));
-                    queryDataBaseResult.setColume_int(resultSet.getInt(connectDataBaseRequest.getColume_1()));
-                    queryDataBaseResult.setColume_String(resultSet.getString(connectDataBaseRequest.getColume_2()));
-                }
-            }
-            else if (param == 2){
-                while (resultSet.next()){
-                    queryDataBaseResult.setName(resultSet.getString(connectDataBaseRequest.getName()));
-                    queryDataBaseResult.setRent_fee(resultSet.getInt(connectDataBaseRequest.getRent_fee()));
-                    queryDataBaseResult.setMobile(resultSet.getString(connectDataBaseRequest.getMobile()));
-                }
-            }
+            JudgeParam judgeParam = new JudgeParam();
+            judgeParam.judgeByParam(param,resultSet,connectDataBaseRequest,queryDataBaseResult);
 
-            
             // 完成后关闭
             resultSet.close();
             stmt.close();
@@ -76,6 +62,8 @@ public class ConnectDataBase {
 
         return queryDataBaseResult;
     }
+
+
 
     }
 

@@ -36,6 +36,12 @@ public class ConnectDataBaseRequest {
      */
     private String rent_fee;
 
+    /**
+     *
+     * @param customerId 客源Id
+     */
+    private String customerId;
+
     public void setSql(String sql) {
         this.sql = sql;
     }
@@ -91,5 +97,11 @@ public class ConnectDataBaseRequest {
         return mobile;
     }
 
+    public void setCustomerId(String customerId){
+        this.customerId = customerId;
+    }
 
+    public String getCustomerId(){
+        return customerId;
+    }
 }

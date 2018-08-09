@@ -32,6 +32,12 @@ public class QueryDataBaseResult {
      */
     private int rent_fee;
 
+    /**
+     *
+     * @param customerId 客源Id
+     */
+    private int customerId;
+
 
     public void setColumn_id(int column_id) {
         this.column_id = column_id;
@@ -79,6 +85,14 @@ public class QueryDataBaseResult {
 
     public int getRent_fee() {
         return rent_fee;
+    }
+
+    public void setCustomerId(int customerId){
+        this.customerId = customerId;
+    }
+
+    public int getCustomerId(){
+        return customerId;
     }
 
 }
