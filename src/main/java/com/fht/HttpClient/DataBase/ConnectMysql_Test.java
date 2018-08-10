@@ -9,7 +9,8 @@ public class ConnectMysql_Test {
         connectDataBaseRequest.setColumn_id("id");
         connectDataBaseRequest.setColume_1("org_id");
         connectDataBaseRequest.setColume_2("org_name");
-        connectDataBaseRequest.setSql("SELECT id, org_id,org_name FROM fht_flying_online.temp_org where org_id = 1100");
+        int org_id = 1100;
+        connectDataBaseRequest.setSql("SELECT id, org_id,org_name FROM fht_flying_online.temp_org where org_id = "+org_id);
         QueryDataBaseResult Result = ConnectDataBase.connectDB(connectDataBaseRequest,1);
         System.out.println("ID:"+Result.getColumn_id());
         System.out.println("org_id:"+Result.getColume_int());

@@ -76,8 +76,8 @@ public class WorkBench_Test {
     @Test
     public void workBench_绩效排行查询(){
         HttpUtil httpUtil = new HttpUtil();
-        String mobile = "13067778590";
-        String password = "20eabe5d64b0e216796e834f52d61fd0b70332fc";
+        String mobile = "13175112091";
+        String password = "942b1603ef74d364171b432619079b2fdd2faac7";
         JSONObject param = buildHouseKepperLoginRequest(mobile,password);
         JSONObject loginResult = httpUtil.doPost(loginUrl,param);
         System.out.println(com.alibaba.fastjson.JSONObject.toJSONString(loginResult,true));

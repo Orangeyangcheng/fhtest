@@ -54,12 +54,14 @@ public class ShareSave_Test {
 
         int relateId = 708169;
         int shareType = 1;
-        String key =System.currentTimeMillis()+"";
+        String key =System.currentTimeMillis()+"脚本测试";
         String SaveMobile = getMobileNo.getTelephone();
         System.out.println("mobile:"+mobile);
         JSONObject shareSaveParam = buildShareSaveRequest(relateId,shareType,key,SaveMobile,sessionId);
         JSONObject shareSaveResult = httpUtil.doPost(shareSaveUrl,shareSaveParam);
         System.out.println(com.alibaba.fastjson.JSONObject.toJSONString(shareSaveResult,true));
+
+
     }
 
     @Test
@@ -76,8 +78,8 @@ public class ShareSave_Test {
         String sessionId = data.getString("sessionId");
 
         int relateId = 708169;
-        int shareType = 1;
-        String key =System.currentTimeMillis()+"";
+        int shareType = 5;
+        String key =System.currentTimeMillis()+"脚本测试";
         String SaveMobile = getMobileNo.getTelephone();
         System.out.println("mobile:"+mobile);
         JSONObject shareSaveParam = buildShareSaveRequest(relateId,shareType,key,SaveMobile,sessionId);
@@ -108,25 +110,25 @@ public class ShareSave_Test {
 
         int relateId = 708169;
         int shareType = 1;
-        String key =System.currentTimeMillis()+"";
+        String key =System.currentTimeMillis()+"脚本测试";
         String SaveMobile = getMobileNo.getTelephone();
         System.out.println("mobile:"+mobile);
         JSONObject shareSaveParam = buildShareSaveRequest(relateId,shareType,key,SaveMobile,sessionId);
-        JSONObject shareSaveResult1 = httpUtil.doPost(shareSaveUrl,shareSaveParam);
-        System.out.println(com.alibaba.fastjson.JSONObject.toJSONString(shareSaveResult1,true));//第一次分享
-
-        JSONObject shareSaveResult2 = httpUtil.doPost(shareSaveUrl,shareSaveParam);
-        System.out.println(com.alibaba.fastjson.JSONObject.toJSONString(shareSaveResult2,true));//第二次分享
-
-        JSONObject shareSaveResult3 = httpUtil.doPost(shareSaveUrl,shareSaveParam);
-        System.out.println(com.alibaba.fastjson.JSONObject.toJSONString(shareSaveResult3,true));//第三次分享
+        JSONObject shareSaveResult = httpUtil.doPost(shareSaveUrl,shareSaveParam);
+        System.out.println(com.alibaba.fastjson.JSONObject.toJSONString(shareSaveResult,true));//第一次分享
 
         JSONObject shareOpenParam = new JSONObject();
         JSONObject shareKey = new JSONObject();
         shareKey.put("key",key);
         shareOpenParam.put("params",shareKey);
-        JSONObject shareOpenSaveResult = httpUtil.doPost(shareOpenSave,shareOpenParam);
-        System.out.println(com.alibaba.fastjson.JSONObject.toJSONString(shareOpenSaveResult,true));
+        JSONObject shareOpenSaveResult1 = httpUtil.doPost(shareOpenSave,shareOpenParam);
+        System.out.println(com.alibaba.fastjson.JSONObject.toJSONString(shareOpenSaveResult1,true));
+
+        JSONObject shareOpenSaveResult2 = httpUtil.doPost(shareOpenSave,shareOpenParam);
+        System.out.println(com.alibaba.fastjson.JSONObject.toJSONString(shareOpenSaveResult2,true));
+
+        JSONObject shareOpenSaveResult3 = httpUtil.doPost(shareOpenSave,shareOpenParam);
+        System.out.println(com.alibaba.fastjson.JSONObject.toJSONString(shareOpenSaveResult3,true));
 
     }
 

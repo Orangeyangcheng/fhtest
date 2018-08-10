@@ -224,8 +224,8 @@ public class SaveCustomer_Test {
     @Test
     public void loginBeforeSaveCustomer(){
         HttpUtil httpUtil = new HttpUtil();
-        String mobile = "18012345678";
-        String password = "20eabe5d64b0e216796e834f52d61fd0b70332fc";
+        String mobile = "13175112091";
+        String password = "942b1603ef74d364171b432619079b2fdd2faac7";
         JSONObject param = buildHouseKepperLoginRequest(mobile,password);
         JSONObject loginResult = HttpUtil.doPost(loginUrl,param);
         System.out.println(com.alibaba.fastjson.JSONObject.toJSONString(loginResult,true));
@@ -237,7 +237,7 @@ public class SaveCustomer_Test {
         String name = getName.getRandomName();
         String remark = "脚本测试";
         String mobileNo = getMobileNo.getTelephone();
-        int fee = 1000;
+        int fee = 1;
         String rentMin = "1000";
         String rentMax = "1500";
         JSONObject params = buidSaveCustomerRequest(name,remark,mobileNo,fee,rentMin,rentMax,sessionId);
