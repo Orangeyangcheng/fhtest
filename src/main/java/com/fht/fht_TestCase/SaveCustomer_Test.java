@@ -13,6 +13,8 @@ import org.testng.annotations.Test;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.fht.HttpClient.HttpUtil.doPost;
+
 public class SaveCustomer_Test {
 
     private static String url = "http://118.31.66.94:8080/api/customer/save";
@@ -70,14 +72,23 @@ public class SaveCustomer_Test {
     @Test
     public void SaveCustomer_冒烟测试() {
         HttpUtil httpUtil = new HttpUtil();
+        String mobile = "13175112091";
+        String password = "942b1603ef74d364171b432619079b2fdd2faac7";
+        JSONObject param = buildHouseKepperLoginRequest(mobile,password);
+        JSONObject loginResult = doPost(loginUrl,param);
+        System.out.println(com.alibaba.fastjson.JSONObject.toJSONString(loginResult,true));
+
+        JSONObject response = JSONObject.fromObject(loginResult);
+        JSONObject data = response.getJSONObject("data");
+        String sessionId = data.getString("sessionId");
         String name = getName.getRandomName();
         String remark = "脚本测试";
-        String mobile = getMobileNo.getTelephone();
+        String mobileNo = getMobileNo.getTelephone();
         int fee = 1000;
         String rentMin = "1000";
         String rentMax = "1500";
-        JSONObject params = buidSaveCustomerRequest(name,remark,mobile,fee,rentMin,rentMax,sessionId);
-        JSONObject result = httpUtil.doPost(url,params);
+        JSONObject params = buidSaveCustomerRequest(name,remark,mobileNo,fee,rentMin,rentMax,sessionId);
+        JSONObject result = doPost(url,params);
         System.out.println("客源姓名："+name);
         System.out.println(com.alibaba.fastjson.JSONObject.toJSONString(result,true));
 
@@ -92,7 +103,7 @@ public class SaveCustomer_Test {
         System.out.println("rent_fee:"+Result.getRent_fee());
         System.out.println("name："+Result.getName());
 
-        Assert.assertTrue(Result.getMobile().equals(mobile),"电话号码不一致");
+        Assert.assertTrue(Result.getMobile().equals(mobileNo),"电话号码不一致");
         Assert.assertTrue(Result.getRent_fee() == fee,"月租金金额不一致");
         Assert.assertTrue(Result.getName().equals(name),"姓名不一致");
     }
@@ -100,13 +111,22 @@ public class SaveCustomer_Test {
     @Test
     public void SaveCustomer_姓名为空(){
         HttpUtil httpUtil = new HttpUtil();
+        String mobile = "13175112091";
+        String password = "942b1603ef74d364171b432619079b2fdd2faac7";
+        JSONObject param = buildHouseKepperLoginRequest(mobile,password);
+        JSONObject loginResult = httpUtil.doPost(loginUrl,param);
+        System.out.println(com.alibaba.fastjson.JSONObject.toJSONString(loginResult,true));
+
+        JSONObject LoginResponse = JSONObject.fromObject(loginResult);
+        JSONObject data = LoginResponse.getJSONObject("data");
+        String sessionId = data.getString("sessionId");
         String name = null;  //姓名为空
         String remark = "脚本测试";
-        String mobile = getMobileNo.getTelephone();
+        String mobileNo = getMobileNo.getTelephone();
         int fee = 1000;
         String rentMin = "1000";
         String rentMax = "1500";
-        JSONObject params = buidSaveCustomerRequest(name,remark,mobile,fee,rentMin,rentMax,sessionId);
+        JSONObject params = buidSaveCustomerRequest(name,remark,mobileNo,fee,rentMin,rentMax,sessionId);
         JSONObject result = httpUtil.doPost(url,params);
         System.out.println(com.alibaba.fastjson.JSONObject.toJSONString(result,true));
         JSONObject response = JSONObject.fromObject(result);
@@ -118,13 +138,22 @@ public class SaveCustomer_Test {
     @Test
     public void SaveCustomer_租金id为负(){
         HttpUtil httpUtil = new HttpUtil();
+        String mobile = "13175112091";
+        String password = "942b1603ef74d364171b432619079b2fdd2faac7";
+        JSONObject param = buildHouseKepperLoginRequest(mobile,password);
+        JSONObject loginResult = httpUtil.doPost(loginUrl,param);
+        System.out.println(com.alibaba.fastjson.JSONObject.toJSONString(loginResult,true));
+
+        JSONObject LoginResponse = JSONObject.fromObject(loginResult);
+        JSONObject data = LoginResponse.getJSONObject("data");
+        String sessionId = data.getString("sessionId");
         String name = getName.getRandomName();
         String remark = "脚本测试";
-        String mobile = getMobileNo.getTelephone();
+        String mobileNo = getMobileNo.getTelephone();
         int fee = -1;
         String rentMin = "1000";
         String rentMax = "1500";
-        JSONObject params = buidSaveCustomerRequest(name,remark,mobile,fee,rentMin,rentMax,sessionId);
+        JSONObject params = buidSaveCustomerRequest(name,remark,mobileNo,fee,rentMin,rentMax,sessionId);
         JSONObject result = httpUtil.doPost(url,params);
         System.out.println("客源姓名："+name);
         System.out.println(com.alibaba.fastjson.JSONObject.toJSONString(result,true));
@@ -139,22 +168,31 @@ public class SaveCustomer_Test {
         System.out.println("rent_fee:"+Result.getRent_fee());
         System.out.println("name："+Result.getName());
 
-        Assert.assertTrue(Result.getMobile().equals(mobile),"电话号码不一致");
-        Assert.assertTrue(Result.getRent_fee()== -1,"月租金金额不一致");
-        Assert.assertTrue(Result.getName().equals(name),"姓名不一致");
+        Assert.assertEquals(Result.getMobile(), mobileNo, "电话号码不一致");
+        Assert.assertEquals(Result.getRent_fee(), -1, "月租金金额不一致");
+        Assert.assertEquals(Result.getName(), name, "姓名不一致");
     }
 
     @Test
     public void SaveCustomer_最小租金大于最大租金(){
         HttpUtil httpUtil = new HttpUtil();
+        String mobile = "13175112091";
+        String password = "942b1603ef74d364171b432619079b2fdd2faac7";
+        JSONObject param = buildHouseKepperLoginRequest(mobile,password);
+        JSONObject loginResult = httpUtil.doPost(loginUrl,param);
+        System.out.println(com.alibaba.fastjson.JSONObject.toJSONString(loginResult,true));
+
+        JSONObject LoginResponse = JSONObject.fromObject(loginResult);
+        JSONObject data = LoginResponse.getJSONObject("data");
+        String sessionId = data.getString("sessionId");
         String name = getName.getRandomName();
         String remark = "脚本测试";
-        String mobile = getMobileNo.getTelephone();
+        String mobileNo = getMobileNo.getTelephone();
         int fee = 1;
         String rentMin = "1500";
         String rentMax = "1000";
-        JSONObject params = buidSaveCustomerRequest(name,remark,mobile,fee,rentMin,rentMax,sessionId);
-        JSONObject result = httpUtil.doPost(url,params);
+        JSONObject params = buidSaveCustomerRequest(name,remark,mobileNo,fee,rentMin,rentMax,sessionId);
+        JSONObject result = doPost(url,params);
         System.out.println("客源姓名："+name);
         System.out.println(com.alibaba.fastjson.JSONObject.toJSONString(result,true));
         JSONObject response = JSONObject.fromObject(result);
@@ -165,14 +203,23 @@ public class SaveCustomer_Test {
     @Test
     public void SaveCustomer_手机号为空() {
         HttpUtil httpUtil = new HttpUtil();
+        String mobile = "13175112091";
+        String password = "942b1603ef74d364171b432619079b2fdd2faac7";
+        JSONObject param = buildHouseKepperLoginRequest(mobile,password);
+        JSONObject loginResult = httpUtil.doPost(loginUrl,param);
+        System.out.println(com.alibaba.fastjson.JSONObject.toJSONString(loginResult,true));
+
+        JSONObject LoginResponse = JSONObject.fromObject(loginResult);
+        JSONObject data = LoginResponse.getJSONObject("data");
+        String sessionId = data.getString("sessionId");
         String name = getName.getRandomName();
         String remark = "脚本测试";
-        String mobile = null;//手机号设置为空
+        String mobileNo = null;//手机号设置为空
         int fee = 1000;
         String rentMin = "1000";
         String rentMax = "1500";
-        JSONObject params = buidSaveCustomerRequest(name,remark,mobile,fee,rentMin,rentMax,sessionId);
-        JSONObject result = httpUtil.doPost(url,params);
+        JSONObject params = buidSaveCustomerRequest(name,remark,mobileNo,fee,rentMin,rentMax,sessionId);
+        JSONObject result = doPost(url,params);
         System.out.println("客源姓名："+name);
         System.out.println(com.alibaba.fastjson.JSONObject.toJSONString(result,true));
 
@@ -194,13 +241,22 @@ public class SaveCustomer_Test {
     @Test
     public void SaveCustomer_最小租金为负数() {
         HttpUtil httpUtil = new HttpUtil();
+        String mobile = "13175112091";
+        String password = "942b1603ef74d364171b432619079b2fdd2faac7";
+        JSONObject param = buildHouseKepperLoginRequest(mobile,password);
+        JSONObject loginResult = httpUtil.doPost(loginUrl,param);
+        System.out.println(com.alibaba.fastjson.JSONObject.toJSONString(loginResult,true));
+
+        JSONObject LoginResponse = JSONObject.fromObject(loginResult);
+        JSONObject data = LoginResponse.getJSONObject("data");
+        String sessionId = data.getString("sessionId");
         String name = getName.getRandomName();
         String remark = "脚本测试";
-        String mobile = getMobileNo.getTelephone();
+        String mobileNo = getMobileNo.getTelephone();
         int fee = 1000;
         String rentMin = "-1000"; // 最小租金设为负数
         String rentMax = "1";
-        JSONObject params = buidSaveCustomerRequest(name,remark,mobile,fee,rentMin,rentMax,sessionId);
+        JSONObject params = buidSaveCustomerRequest(name,remark,mobileNo,fee,rentMin,rentMax,sessionId);
         JSONObject result = httpUtil.doPost(url,params);
         System.out.println("客源姓名："+name);
         System.out.println(com.alibaba.fastjson.JSONObject.toJSONString(result,true));
@@ -227,7 +283,7 @@ public class SaveCustomer_Test {
         String mobile = "13175112091";
         String password = "942b1603ef74d364171b432619079b2fdd2faac7";
         JSONObject param = buildHouseKepperLoginRequest(mobile,password);
-        JSONObject loginResult = HttpUtil.doPost(loginUrl,param);
+        JSONObject loginResult = doPost(loginUrl,param);
         System.out.println(com.alibaba.fastjson.JSONObject.toJSONString(loginResult,true));
 
         JSONObject response = JSONObject.fromObject(loginResult);
@@ -269,7 +325,7 @@ public class SaveCustomer_Test {
         String mobile = "18012345678";
         String password = "20eabe5d64b0e216796e834f52d61fd0b70332fc";
         JSONObject param = buildHouseKepperLoginRequest(mobile,password);
-        JSONObject loginResult = HttpUtil.doPost(loginUrl,param);
+        JSONObject loginResult = httpUtil.doPost(loginUrl,param);
         System.out.println(com.alibaba.fastjson.JSONObject.toJSONString(loginResult,true));
 
         JSONObject response = JSONObject.fromObject(loginResult);
