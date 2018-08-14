@@ -75,7 +75,7 @@ public class SaveCustomer_Test {
         String mobile = "13175112091";
         String password = "942b1603ef74d364171b432619079b2fdd2faac7";
         JSONObject param = buildHouseKepperLoginRequest(mobile,password);
-        JSONObject loginResult = doPost(loginUrl,param);
+        JSONObject loginResult = httpUtil.doPost(loginUrl,param);
         System.out.println(com.alibaba.fastjson.JSONObject.toJSONString(loginResult,true));
 
         JSONObject response = JSONObject.fromObject(loginResult);
