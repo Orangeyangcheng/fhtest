@@ -15,13 +15,15 @@ import java.util.List;
 
 import static com.fht.HttpClient.HttpUtil.doPost;
 
+/**
+ *  客源保存接口用例
+ *  create by yangcheng
+ */
 public class SaveCustomer_Test {
 
     private static String url = "http://118.31.66.94:8080/api/customer/save";
 
     private static String loginUrl = "http://118.31.66.94:8080/api/user/loginByApp";
-
-    private static String sessionId = " MTMwMDAwMDAwMDA=";
 
     public static JSONObject buidSaveCustomerRequest(
             String name, String remark, String mobile, int fee,String rentMin ,String rentMax,String sessionId){
